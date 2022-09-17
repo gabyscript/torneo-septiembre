@@ -16,5 +16,6 @@ musicaFondo.loop= true;
 
 musicaFondo.addEventListener('ended', function(){
     this.currentTime= 0;
+    
     this.play();
 },false);
