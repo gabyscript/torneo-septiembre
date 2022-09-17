@@ -1,0 +1,116 @@
+/* Ventana de bienvenida*/
+
+.bienvenida {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.postimg.cc/7hbryNJJ/Gates-Of-Olympus1.jpg');
+    background-size: 100% 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.bienvenida.visible {
+    display: flex;
+}
+
+.jackpot-title {
+    color: var(--hotpink);
+    font-size: 4vw;
+}
+
+#iniciar-button {
+    width: 10vw;
+    height: 8vh;    
+    background-color: var(--hotpink);
+    border: none;
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#iniciar-button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50), 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Mesa de juego  */
+
+.mesa {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.postimg.cc/q71kQMQz/Grand.png");
+    background-position: center;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;   
+    padding-top: 16vh;
+
+}
+
+.mesa.visible {
+    display: flex;
+}
+
+/* Tarjetas */
+
+
+.tarjeta {
+    width: 15vw;
+    height: 40vh;    
+    background-image: var(--gradient);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    background-color: linear-gradient(35deg, #f27121, #e94057);   
+    background-image: url("https://i.postimg.cc/J0ZTMFQv/a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    box-sizing: border-box;   
+    border-radius: 5%;
+}
+
+.contenido-tarjeta{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;    
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    box-sizing: border-box;   
+      
+}
+
+.contenido-tarjeta::selection {
+    background: transparent;
+  }
+  
+.tarjeta.descubierta {
+    transform: rotateY(-180deg);
+  }
+
+.descubierta {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
