@@ -17,7 +17,7 @@
 }
 
 .jackpot-title {
-    color: var(--hotpink);
+    color: #040404;
     font-size: 4vw;
 }
 
@@ -36,10 +36,12 @@
 
 /* Mesa de juego  */
 
+
+
 .mesa {
     width: 100vw;
     height: 100vh;
-    background-image: url("https://i.postimg.cc/q71kQMQz/Grand.png");
+    background-image: url("https://i.postimg.cc/ZqpLW28Q/cordillera-2.jpg");
     background-position: center;  
     background-attachment: fixed; 
     background-repeat: no-repeat;
@@ -48,9 +50,7 @@
     flex-direction: row;
     flex-wrap: wrap; 
     align-items: center;
-    justify-content: space-around;   
-    padding-top: 16vh;
-
+    justify-content: space-around;
 }
 
 .mesa.visible {
@@ -101,11 +101,11 @@
 
 .contenido-tarjeta::selection {
     background: transparent;
-  }
+}
   
 .tarjeta.descubierta {
     transform: rotateY(-180deg);
-  }
+}
 
 .descubierta {
     background-repeat: no-repeat;
